@@ -41,9 +41,9 @@ class AtividadeController extends Controller
 
         //vetor com as mensagens de erro
         $messages = array(
-            'title.required' => 'É obrigatório um título para a atividade',
-            'description.required' => 'É obrigatória uma descrição para a atividade',
-            'scheduledto.required' => 'É obrigatório o cadastro da data/hora da atividade',
+            'title.required' => 'É necessário um título para a atividade',
+            'description.required' => 'É necessário uma descrição para a atividade',
+            'scheduledto.required' => 'É necessário o cadastro da data/hora da atividade',
         );
 
         //vetor com as especificações de validações
@@ -110,9 +110,9 @@ class AtividadeController extends Controller
 
         //vetor com as mensagens de erro
         $messages = array(
-            'title.required' => 'É obrigatório um título para a atividade',
-            'description.required' => 'É obrigatória uma descrição para a atividade',
-            'scheduledto.required' => 'É obrigatório o cadastro da data/hora da atividade',
+            'title.required' => 'É necessário um título para a atividade',
+            'description.required' => 'É necessário uma descrição para a atividade',
+            'scheduledto.required' => 'É necessário o cadastro da data/hora da atividade',
         );
 
         //vetor com as especificações de validações

@@ -41,9 +41,9 @@ class MensagemController extends Controller
 
         //vetor com as mensagens de erro
         $messages = array(
-            'titulo.required' => 'É obrigatório um título para a mensagem',
-            'texto.required' => 'É obrigatória um texto',
-            'autor.required' => 'É obrigatório o cadastro do autor da mensagem',
+            'titulo.required' => 'É necessário um título para a mensagem',
+            'texto.required' => 'É necessário um texto',
+            'autor.required' => 'É necessário o cadastro do autor da mensagem',
         );
 
         //vetor com as especificações de validações
@@ -110,9 +110,9 @@ class MensagemController extends Controller
 
         //vetor com as mensagens de erro
         $messages = array(
-            'titulo.required' => 'É obrigatório um título para a mensagem',
-            'texto.required' => 'É obrigatória um texto para a mensagem',
-            'autor.required' => 'É obrigatório o cadastro do autor da mensagem',
+            'titulo.required' => 'É necessário um título para a mensagem',
+            'texto.required' => 'É necessário um texto para a mensagem',
+            'autor.required' => 'É necessário o cadastro do autor da mensagem',
         );
 
         //vetor com as especificações de validações
