@@ -14,14 +14,18 @@
 	<h3>Título: <b><a href="/atividades/{{$atividade->id}}">{{$atividade->title}}</a></b></h3>
   <p>Agendado para: <b>{{\Carbon\Carbon::parse($atividade->scheduledto)->format('d/m/Y h:m')}}</b></p>
 	<p>Descrição: <b>{{$atividade->description}}</b></p>
+  @auth
   <p>Ações: 
     <a href="/atividades/{{$atividade->id}}">Sobre</a>
     <a href="/atividades/{{$atividade->id}}/edit">Editar</a> 
     <a href="/atividades/{{$atividade->id}}/delete">Deletar</a>
   </p>
+  @endauth
 	<br>
 @endforeach
 
 <br>
-<p><a href="/atividades/create">Criar nova atividade</a></p>
 
+@auth
+<p><a href="/atividades/create">Criar nova atividade</a></p>
+@endauth
