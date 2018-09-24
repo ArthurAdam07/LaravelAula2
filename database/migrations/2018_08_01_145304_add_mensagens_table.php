@@ -20,6 +20,13 @@ class AddMensagensTable extends Migration
             $table->string('autor');    //autor da mensagem
             $table->timestamps();       //registro created_at e updated_at
         });
+    
+    Schema::table('mensagens', function($table){
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('atividade_id')->references('id')->on('atividades');
+        });
+
+
     }
 
     /**
